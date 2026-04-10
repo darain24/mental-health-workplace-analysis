@@ -1,4 +1,4 @@
-# 🧠 Mental Health in the Workplace — Data Analytics
+# Mental Health in the Workplace — Data Analytics
 
 > **An end-to-end data analytics project** exploring mental health attitudes, treatment patterns, and employer support across the global tech workforce.
 
@@ -10,26 +10,26 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Key Findings](#-key-findings)
-- [Visualizations](#-visualizations)
-- [Dataset](#-dataset)
-- [Data Pipeline](#-data-pipeline)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Feature Engineering](#-feature-engineering)
-- [Data Dictionary](#-data-dictionary)
-- [Tableau Dashboard](#-tableau-dashboard)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Acknowledgements](#-acknowledgements)
+- [Overview](#overview)
+- [Key Findings](#key-findings)
+- [Visualizations](#visualizations)
+- [Dataset](#dataset)
+- [Data Pipeline](#data-pipeline)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Feature Engineering](#feature-engineering)
+- [Data Dictionary](#data-dictionary)
+- [Tableau Dashboard](#tableau-dashboard)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
-## 🔍 Overview
+## Overview
 
 Mental health remains one of the most under-addressed issues in the modern workplace, particularly in the technology sector. This project analyzes survey data from **1,259 tech professionals across 48+ countries** to uncover patterns in:
 
@@ -42,21 +42,21 @@ The analysis pipeline spans **raw data ingestion → cleaning & feature engineer
 
 ---
 
-## 🔑 Key Findings
+## Key Findings
 
 | Insight | Detail |
 |---------|--------|
-| 🏥 **Treatment Rate** | **50.4%** of respondents have sought mental health treatment |
-| 🌏 **Geographic Variation** | New Zealand (62.5%) and Australia (61.9%) lead in treatment rates; France trails at 15.4% |
-| 👨‍👩‍👧 **Family History** | Strongest predictor of treatment-seeking (correlation: **0.38**) |
-| ⚠️ **Work Interference** | Highest correlation with treatment (**0.66**) — those whose work is "Often" affected seek help at **93%+** rates |
-| 🏢 **Employer Support Gap** | Employees with **zero employer support** who report frequent interference are flagged **high-risk** |
-| 🏠 **Remote Work** | Minimal difference in work interference levels between remote and office workers |
-| 📊 **Company Size** | Larger companies (500+) provide significantly more support (correlation: **0.41** between size and support) |
+| **Treatment Rate** | **50.4%** of respondents have sought mental health treatment |
+| **Geographic Variation** | New Zealand (62.5%) and Australia (61.9%) lead in treatment rates; France trails at 15.4% |
+| **Family History** | Strongest predictor of treatment-seeking (correlation: **0.38**) |
+| **Work Interference** | Highest correlation with treatment (**0.66**) — those whose work is "Often" affected seek help at **93%+** rates |
+| **Employer Support Gap** | Employees with **zero employer support** who report frequent interference are flagged **high-risk** |
+| **Remote Work** | Minimal difference in work interference levels between remote and office workers |
+| **Company Size** | Larger companies (500+) provide significantly more support (correlation: **0.41** between size and support) |
 
 ---
 
-## 📊 Visualizations
+## Visualizations
 
 ### 1. Treatment Rate by Country (Top 10)
 <p align="center">
@@ -95,7 +95,7 @@ The analysis pipeline spans **raw data ingestion → cleaning & feature engineer
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 | Property | Value |
 |----------|-------|
@@ -116,7 +116,7 @@ The analysis pipeline spans **raw data ingestion → cleaning & feature engineer
 
 ---
 
-## ⚙️ Data Pipeline
+## Data Pipeline
 
 ```
 survey.csv (raw)
@@ -141,7 +141,7 @@ survey.csv (raw)
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology | Purpose |
 |-------|------------|---------|
@@ -154,7 +154,7 @@ survey.csv (raw)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 mental-health-workplace-analysis/
@@ -187,7 +187,7 @@ mental-health-workplace-analysis/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -232,7 +232,7 @@ Saved: mental_health_clean.csv
 
 ---
 
-## 🧬 Feature Engineering
+## Feature Engineering
 
 The following features were **derived** during the data cleaning pipeline to enable deeper analysis:
 
@@ -250,7 +250,7 @@ The following features were **derived** during the data cleaning pipeline to ena
 
 ---
 
-## 📖 Data Dictionary
+## Data Dictionary
 
 ### Cleaned Dataset — `mental_health_clean.csv`
 
@@ -297,9 +297,14 @@ The following features were **derived** during the data cleaning pipeline to ena
 
 ---
 
-## 📈 Tableau Dashboard
+## Tableau Dashboard
 
 The interactive Tableau dashboard (`tableau/mental_health_dashboard.twbx`) provides filterable views for business stakeholders.
+
+<p align="center">
+  <!-- TODO: Add Tableau dashboard screenshot here -->
+  <img src="visuals/tableau_dashboard.png" alt="Tableau Dashboard" width="900"/>
+</p>
 
 ### How to Open
 
@@ -316,7 +321,7 @@ open tableau/mental_health_dashboard.twbx
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how to get started:
 
@@ -328,20 +333,20 @@ Contributions are welcome! Here's how to get started:
 
 ### Ideas for Contribution
 
-- 🤖 Add ML classification models (Logistic Regression, Random Forest) to predict treatment-seeking
-- 📊 Build additional Tableau worksheets (e.g., geographic chloropleth map)
-- 📈 Add temporal analysis with multi-year OSMI data (2016, 2017, 2019)
-- 🧪 Statistical hypothesis testing (chi-squared, t-tests) for significance validation
+- Add ML classification models (Logistic Regression, Random Forest) to predict treatment-seeking
+- Build additional Tableau worksheets (e.g., geographic chloropleth map)
+- Add temporal analysis with multi-year OSMI data (2016, 2017, 2019)
+- Statistical hypothesis testing (chi-squared, t-tests) for significance validation
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - **Data Source**: [Open Sourcing Mental Illness (OSMI)](https://osmihelp.org/) — Mental Health in Tech Survey 2014
 - **Platform**: [Kaggle](https://www.kaggle.com/datasets/osmi/mental-health-in-tech-survey)
@@ -350,5 +355,5 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ---
 
 <p align="center">
-  <b>If you found this project useful, please ⭐ star the repository!</b>
+  <b>If you found this project useful, please star the repository!</b>
 </p>
